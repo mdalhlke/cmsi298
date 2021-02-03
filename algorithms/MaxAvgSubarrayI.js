@@ -15,8 +15,6 @@ var findMaxAverage = function(nums, k) {
          if(maxAverage < sum) {
            maxAverage = sum;
          }
-       
     }
        return maxAverage/k;
-   
 };
