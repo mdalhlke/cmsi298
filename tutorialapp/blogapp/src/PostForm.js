@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import { Form, Button } from "react-bootstrap";
+import React, { useState } from 'react';
+import { Form, Button } from 'react-bootstrap';
 
 function PostForm(props) {
   const { addPostToList } = props;
   const [checked, setChecked] = useState(false);
-  const [title, setTitle] = useState("");
-  const [body, setBody] = useState("");
+  const [title, setTitle] = useState('');
+  const [body, setBody] = useState('');
 
   function handleSubmit(event) {
     event.preventDefualt();
     addPostToList({ id: String(Math.random() * 1000 + 100), title, body });
-    setTitle("");
-    setBody("");
+    setTitle('');
+    setBody('');
     setChecked(false);
   }
 

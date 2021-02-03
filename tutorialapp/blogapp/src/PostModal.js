@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Modal, Spinner } from "react-bootstrap";
+import React, { useState, useEffect } from 'react';
+import { Modal, Spinner } from 'react-bootstrap';
 
 function PostModal(props) {
   const { postId, show, closePostModal } = props;
